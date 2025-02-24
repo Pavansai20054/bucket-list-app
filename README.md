@@ -59,7 +59,7 @@ Check out the live version of this project:
 <img src="desktop_view.png" alt="Desktop-view" width="600" height="300">
 
 ### 📱Mobile View
-<img src="mobile_view.jpg" alt="Mobile-view" width="600" height="300">
+<center><img src="mobile_view.jpg" alt="Mobile-view" width="200" height="600"></center>
 
 ## 📝 License
 This project is licensed under the **MIT License**. See the **LICENSE** file for details.
