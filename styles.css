@@ -1,0 +1,104 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1E1E2E; /* Dark Blue-Gray */
+    color: #F8F8F2; /* Light text for readability */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #5A189A; /* Deep Purple */
+    color: #FAF3F0; /* Off-White */
+    padding: 20px;
+    font-size: 26px;
+    font-weight: bold;
+    border-radius: 0 0 25px 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+main {
+    flex: 1;
+}
+
+.input-container {
+    margin: 20px;
+}
+
+input {
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #9D4EDD; /* Purple Accent */
+    border-radius: 5px;
+    background-color: #3A3A56; /* Darker background */
+    color: #FAF3F0;
+}
+
+button {
+    padding: 12px 18px;
+    font-size: 16px;
+    background-color: #9D4EDD; /* Bright Purple */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #7B2CBF; /* Slightly Darker Purple */
+}
+
+.bucket-list {
+    list-style: none;
+    padding: 0;
+    max-width: 450px;
+    margin: 20px auto;
+    background: #2E2E3D; /* Deep Gray */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.bucket-list li {
+    padding: 12px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 1px solid #6247AA; /* Soft Purple */
+    transition: background-color 0.4s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.bucket-list li:last-child {
+    border-bottom: none;
+}
+
+/* Hover Effect */
+.bucket-list li:hover {
+    background-color: #6247AA; /* Soft Purple */
+    transform: scale(1.05);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(98, 71, 170, 0.5);
+}
+
+/* Completed Task Effect */
+.completed {
+    text-decoration: line-through;
+    color: #FF7675; /* Muted Red */
+    transition: color 0.3s ease;
+}
+
+footer {
+    padding: 12px;
+    background-color: #9D4EDD;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.2);
+}
