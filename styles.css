@@ -2,8 +2,8 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #1E1E2E; /* Dark Blue-Gray */
-    color: #F8F8F2; /* Light text for readability */
+    background-color: #1E1E2E;
+    color: #F8F8F2;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -11,8 +11,8 @@ body {
 }
 
 header {
-    background-color: #5A189A; /* Deep Purple */
-    color: #FAF3F0; /* Off-White */
+    background-color: #5A189A;
+    color: #FAF3F0;
     padding: 20px;
     font-size: 26px;
     font-weight: bold;
@@ -31,16 +31,17 @@ main {
 input {
     padding: 12px;
     font-size: 16px;
-    border: 2px solid #9D4EDD; /* Purple Accent */
+    border: 2px solid #9D4EDD;
     border-radius: 5px;
-    background-color: #3A3A56; /* Darker background */
+    background-color: #3A3A56;
     color: #FAF3F0;
+    margin-right: 10px;
 }
 
 button {
     padding: 12px 18px;
     font-size: 16px;
-    background-color: #9D4EDD; /* Bright Purple */
+    background-color: #9D4EDD;
     color: white;
     border: none;
     border-radius: 8px;
@@ -49,7 +50,7 @@ button {
 }
 
 button:hover {
-    background-color: #7B2CBF; /* Slightly Darker Purple */
+    background-color: #7B2CBF;
 }
 
 .bucket-list {
@@ -57,7 +58,7 @@ button:hover {
     padding: 0;
     max-width: 450px;
     margin: 20px auto;
-    background: #2E2E3D; /* Deep Gray */
+    background: #2E2E3D;
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -69,7 +70,7 @@ button:hover {
     display: flex;
     align-items: center;
     gap: 12px;
-    border-bottom: 1px solid #6247AA; /* Soft Purple */
+    border-bottom: 1px solid #6247AA;
     transition: background-color 0.4s ease, transform 0.3s ease;
     cursor: pointer;
 }
@@ -80,7 +81,7 @@ button:hover {
 
 /* Hover Effect */
 .bucket-list li:hover {
-    background-color: #6247AA; /* Soft Purple */
+    background-color: #6247AA;
     transform: scale(1.05);
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(98, 71, 170, 0.5);
@@ -101,4 +102,22 @@ footer {
     font-size: 18px;
     border-radius: 20px 20px 0 0;
     box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Media for mobile view */
+@media (max-width: 600px) {
+    .input-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input {
+        margin-right: 0;
+        margin-bottom: 10px; 
+    }
+
+    button {
+        width: 40%;
+    }
 }
